@@ -1,0 +1,482 @@
+:root {
+  /* white */
+  --primary: #6d32a8;
+  --bg: #fff;
+  --bg-dua: #dddddf;
+  --cr: #010101;
+  --bg-gr: rgba(255, 255, 255, 0.8);
+  --fw: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--cr);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7%;
+  background-color: var(--bg-gr);
+  border-bottom: 1px solid #513c28;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cr);
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+}
+
+.navbar .navbar-nav a {
+  color: var(--cr);
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px; /* jarak dari teks */
+  left: 0;
+}
+
+.navbar .navbar-nav a:hover::after {
+  width: 100%;
+}
+.navbar .navbar-nav a.active::after {
+  width: 100%;
+}
+
+.navbar .menus {
+  display: none;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero .content {
+  max-width: 40rem;
+}
+
+.hero .gambar img {
+  border-radius: 50%;
+}
+
+.hero .content p {
+  font-weight: 600;
+}
+
+.hero .content p span {
+  color: var(--primary);
+}
+
+.hero .content h1 {
+  padding: 1.3rem 0 1.8rem;
+  font-size: 2rem;
+}
+.hero .content .detail-singkat {
+  font-weight: 300;
+}
+
+.hero .content .medsos {
+  padding: 1.3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero .content .medsos span {
+  font-weight: var(--fw);
+}
+
+.hero .content .link-button {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero .content .link-button button {
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--primary);
+  color: black;
+}
+.hero .content .link-button button:hover {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.about .content {
+  background-color: var(--bg-dua);
+  padding: 6rem 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about .content .details-about {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.about .content .details-about .number-rate {
+  min-width: 10rem;
+}
+
+.about .content .details-about .number-rate h2 {
+  font-size: 5rem;
+}
+
+.about .content .details-about .number-rate p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.about .content .details-about .detail-skill span {
+  font-weight: var(--fw);
+}
+
+.about .content .details-about .detail-skill p {
+  font-weight: 800;
+  padding: 0.8rem 0;
+}
+
+.about .content .details-about .detail-skill .box-details article {
+  background-color: var(--bg);
+  padding: 1rem;
+}
+
+.about .content .details-about .detail-skill .box-details article h1 {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.biografi {
+  padding: 6rem 7%;
+}
+
+.biografi .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.biografi .content h1 {
+  margin-bottom: 1rem;
+}
+
+.biografi .content .biografi-container .biografi-img > img {
+  width: 100%;
+  height: 100%;
+}
+.biografi .content .biografi-container .biografi-img > figcaption {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.biografi .content .biografi-container .biografi-text p {
+  text-align: justify;
+  padding-top: 10px;
+}
+.portfolio {
+  min-height: 100vh;
+  padding: 6rem 7%;
+}
+
+.portfolio .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio .content span {
+  text-align: center;
+  font-weight: var(--fw);
+  padding: 1rem;
+  max-width: 50rem;
+}
+
+.portfolio .content .menu button {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--bg);
+  color: var(--cr);
+  font-weight: 100;
+}
+
+.portfolio .content .menu button.active {
+  background-color: var(--primary);
+  color: var(--bg);
+  border-radius: 0.1rem;
+}
+
+.portfolio .content .card-portfolio {
+  padding: 1.3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .content .card-portfolio .card {
+  background-color: var(--bg-dua);
+  padding: 1.3rem;
+  max-width: 18rem;
+  margin: 0.5rem;
+}
+.portfolio .content .card-portfolio .card img {
+  width: 100%;
+}
+.portfolio .content .card-portfolio .card h3 {
+  padding: 1rem 0 0.5rem;
+}
+.portfolio .content .card-portfolio .card span {
+  font-weight: 100;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  background-color: #6d32a8;
+  width: 100%;
+  height: 3px;
+}
+
+/*  icon settings */
+.settings {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.settings svg {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-dua);
+  border: 1px solid var(--primary);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.settings svg:not(.toggle-settings) {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.settings:hover svg:not(.toggle-settings) {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+footer {
+  background-color: var(--bg-dua);
+  padding: 1.6rem 7% 0;
+}
+
+footer .border {
+  border-bottom: 2px solid grey;
+}
+
+footer .content {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer a {
+  color: var(--cr);
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+footer .links a {
+  margin: 0 0.5rem;
+}
+
+footer .details-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .details-footer p {
+  padding: 1.3rem 0 1.6rem;
+  max-width: 50rem;
+}
+
+footer .details-footer p span {
+  color: var(--primary);
+}
+
+footer .details-footer .menu {
+  padding: 0.4rem 0 1.5rem;
+}
+
+footer .details-footer .menu {
+  display: flex;
+  gap: 0.3rem;
+}
+
+footer .details-footer .menu div {
+  border: 1px solid var(--primary);
+  padding: 0.4rem 0.4rem 0;
+  border-radius: 0.1rem;
+}
+.services {
+  background-color: var(--bg-dua);
+}
+
+.services .content {
+  padding: 6rem 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services .content img {
+  width: 250px;
+  height: 250px;
+}
+.services .content p {
+  font-weight: var(--fw);
+  padding: 1rem 0 1rem;
+}
+.services .content .services-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 80%;
+  }
+
+  .navbar .menus {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--bg-dua);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--cr);
+    display: block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .about .details-about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services .content {
+    text-align: center;
+  }
+  .services .content .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .portfolio .content .card-portfolio {
+    justify-content: center;
+  }
+  .portfolio .content .menu {
+    text-align: center;
+  }
+
+  .about .content .box-details {
+    justify-content: center;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+}
