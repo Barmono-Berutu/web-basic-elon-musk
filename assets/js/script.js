@@ -99,7 +99,7 @@ for (let i = 0; i < listMenu.length; i++) {
 // Data article dengan kategori
 let article = [
   {
-    gambar: "gambar/falcon.jpg",
+    gambar: "assets/gambar/falcon.jpg",
     alt: "Falcon Heavy",
     title: "Falcon Heavy",
     content:
@@ -107,7 +107,7 @@ let article = [
     kategori: "Antariksa",
   },
   {
-    gambar: "gambar/starship.jpg",
+    gambar: "assets/gambar/starship.jpg",
     alt: "Starship",
     title: "Starship",
     content:
@@ -115,7 +115,7 @@ let article = [
     kategori: "Antariksa",
   },
   {
-    gambar: "gambar/tesla.jpg",
+    gambar: "assets/gambar/tesla.jpg",
     alt: "Tesla Model S",
     title: "Tesla Model S",
     content:
@@ -123,7 +123,7 @@ let article = [
     kategori: "Otomotif",
   },
   {
-    gambar: "gambar/cybertruck.jpg",
+    gambar: "assets/gambar/cybertruck.jpg",
     alt: "Cybertruck",
     title: "Cybertruck",
     content:
@@ -131,7 +131,7 @@ let article = [
     kategori: "Otomotif",
   },
   {
-    gambar: "gambar/solar.jpg",
+    gambar: "assets/gambar/solar.jpg",
     alt: "Solar Roof",
     title: "Solar Roof",
     content:
@@ -139,7 +139,7 @@ let article = [
     kategori: "Energi",
   },
   {
-    gambar: "gambar/neuralink.jpg",
+    gambar: "assets/gambar/neuralink.jpg",
     alt: "Neuralink Prototype",
     title: "Neuralink Prototype",
     content:
@@ -147,7 +147,7 @@ let article = [
     kategori: "Teknologi",
   },
   {
-    gambar: "gambar/hyperloop.jpg",
+    gambar: "assets/gambar/hyperloop.jpg",
     alt: "Hyperloop Concept",
     title: "Hyperloop",
     content:
